@@ -25,19 +25,18 @@ Our given dataset
       
   6) What steps did you take to try and increase model performance?<BR>
       We tried several different combinations to optimize the model.
-        * 1st Optimization -- Binned the ASK_AMT column -- kept this for future models
+        * 1st Optimization -- dropped INCOME_AMT_0 -- kept and saved
         * 2nd Optimization -- Kept the same amount of neurons but spread them over 4 layers
         * 3rd Optimization -- Upped neurons to 260 over 6 layers
-        * 4th Optimization -- Used same set up as 1st Optimization -- changed epochs from 50 to 500
+        * 4th Optimization -- Used same set up as 1st Optimization -- changed epochs from 50 to 500 -- changed hidden layer activation to LeakyReLU
 
 ## Summary
   After several different models were tried the accuracy rating did not increase in any notable way. 
 #### Recommendations
-  While we did bin the ASK_AMT, I do not belive that the column is even necessary. 
    * Recommended columns to remove
       * ASK_AMT
       * STATUS
       * SPECIAL_CONSIDERATIONS
-      * INCOME_AMOUNT-- 24388 enties are '0' out of 34299 enties
+      * INCOME_AMT-- 24388 enties are '0' out of 34299 enties -- did remove INCOME_AMT_0)
    * More playing with the activation functions is needed on future models. In my limited amount of time I was not able to play much with these.
    * I wouldn't touch the neurons or epochs until the two previous steps showed some promise.
