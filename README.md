@@ -37,6 +37,6 @@ Our given dataset
       * ASK_AMT
       * STATUS
       * SPECIAL_CONSIDERATIONS
-      * INCOME_AMT-- 24388 enties are '0' out of 34299 enties -- did remove INCOME_AMT_0)
+      * INCOME_AMT-- 24388 enties are '0' out of 34299 enties -- did remove INCOME_AMT_0, possibly remove the rest
    * More playing with the activation functions is needed on future models. In my limited amount of time I was not able to play much with these.
    * I wouldn't touch the neurons or epochs until the two previous steps showed some promise.
